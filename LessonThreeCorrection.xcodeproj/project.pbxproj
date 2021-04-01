@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		0687A1432615CF7F007EBB3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687A1422615CF7F007EBB3C /* AppDelegate.swift */; };
 		0687A1452615CF7F007EBB3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687A1442615CF7F007EBB3C /* SceneDelegate.swift */; };
-		0687A1472615CF7F007EBB3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687A1462615CF7F007EBB3C /* ViewController.swift */; };
+		0687A1472615CF7F007EBB3C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687A1462615CF7F007EBB3C /* LoginViewController.swift */; };
 		0687A14A2615CF7F007EBB3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0687A1482615CF7F007EBB3C /* Main.storyboard */; };
 		0687A14C2615CF80007EBB3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0687A14B2615CF80007EBB3C /* Assets.xcassets */; };
 		0687A14F2615CF80007EBB3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0687A14D2615CF80007EBB3C /* LaunchScreen.storyboard */; };
+		0687A1592615CFC7007EBB3C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687A1582615CFC7007EBB3C /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0687A13F2615CF7F007EBB3C /* LessonThreeCorrection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessonThreeCorrection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0687A1422615CF7F007EBB3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0687A1442615CF7F007EBB3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0687A1462615CF7F007EBB3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0687A1462615CF7F007EBB3C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0687A1492615CF7F007EBB3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0687A14B2615CF80007EBB3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0687A14E2615CF80007EBB3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0687A1502615CF80007EBB3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0687A1582615CFC7007EBB3C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				0687A1422615CF7F007EBB3C /* AppDelegate.swift */,
 				0687A1442615CF7F007EBB3C /* SceneDelegate.swift */,
-				0687A1462615CF7F007EBB3C /* ViewController.swift */,
+				0687A1462615CF7F007EBB3C /* LoginViewController.swift */,
+				0687A1582615CFC7007EBB3C /* WelcomeViewController.swift */,
 				0687A1482615CF7F007EBB3C /* Main.storyboard */,
 				0687A14B2615CF80007EBB3C /* Assets.xcassets */,
 				0687A14D2615CF80007EBB3C /* LaunchScreen.storyboard */,
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0687A1472615CF7F007EBB3C /* ViewController.swift in Sources */,
+				0687A1472615CF7F007EBB3C /* LoginViewController.swift in Sources */,
+				0687A1592615CFC7007EBB3C /* WelcomeViewController.swift in Sources */,
 				0687A1432615CF7F007EBB3C /* AppDelegate.swift in Sources */,
 				0687A1452615CF7F007EBB3C /* SceneDelegate.swift in Sources */,
 			);
@@ -293,10 +297,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = philipnoskov.LessonThreeCorrection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,10 +317,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = philipnoskov.LessonThreeCorrection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
