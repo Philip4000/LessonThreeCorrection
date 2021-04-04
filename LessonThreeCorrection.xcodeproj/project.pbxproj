@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0662914A261A355A001C4C40 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06629149261A355A001C4C40 /* MyProfileViewController.swift */; };
+		06629153261A3A40001C4C40 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06629152261A3A40001C4C40 /* User.swift */; };
+		06629158261A3EDF001C4C40 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06629157261A3EDF001C4C40 /* Person.swift */; };
 		0687A1432615CF7F007EBB3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687A1422615CF7F007EBB3C /* AppDelegate.swift */; };
 		0687A1452615CF7F007EBB3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687A1442615CF7F007EBB3C /* SceneDelegate.swift */; };
 		0687A1472615CF7F007EBB3C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687A1462615CF7F007EBB3C /* LoginViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06629149261A355A001C4C40 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		06629152261A3A40001C4C40 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		06629157261A3EDF001C4C40 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0687A13F2615CF7F007EBB3C /* LessonThreeCorrection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessonThreeCorrection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0687A1422615CF7F007EBB3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0687A1442615CF7F007EBB3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0662914C261A361A001C4C40 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0687A1462615CF7F007EBB3C /* LoginViewController.swift */,
+				0687A1582615CFC7007EBB3C /* WelcomeViewController.swift */,
+				06629149261A355A001C4C40 /* MyProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0662914E261A362D001C4C40 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0687A1482615CF7F007EBB3C /* Main.storyboard */,
+				0687A14D2615CF80007EBB3C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0662914F261A367C001C4C40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0687A14B2615CF80007EBB3C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		06629150261A36B4001C4C40 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				0687A1422615CF7F007EBB3C /* AppDelegate.swift */,
+				0687A1442615CF7F007EBB3C /* SceneDelegate.swift */,
+				0687A1502615CF80007EBB3C /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		06629151261A36C3001C4C40 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				06629152261A3A40001C4C40 /* User.swift */,
+				06629157261A3EDF001C4C40 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0687A1362615CF7F007EBB3C = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +110,11 @@
 		0687A1412615CF7F007EBB3C /* LessonThreeCorrection */ = {
 			isa = PBXGroup;
 			children = (
-				0687A1422615CF7F007EBB3C /* AppDelegate.swift */,
-				0687A1442615CF7F007EBB3C /* SceneDelegate.swift */,
-				0687A1462615CF7F007EBB3C /* LoginViewController.swift */,
-				0687A1582615CFC7007EBB3C /* WelcomeViewController.swift */,
-				0687A1482615CF7F007EBB3C /* Main.storyboard */,
-				0687A14B2615CF80007EBB3C /* Assets.xcassets */,
-				0687A14D2615CF80007EBB3C /* LaunchScreen.storyboard */,
-				0687A1502615CF80007EBB3C /* Info.plist */,
+				0662914C261A361A001C4C40 /* ViewControllers */,
+				06629151261A36C3001C4C40 /* Models */,
+				0662914E261A362D001C4C40 /* Storyboards */,
+				06629150261A36B4001C4C40 /* Supporting */,
+				0662914F261A367C001C4C40 /* Resources */,
 			);
 			path = LessonThreeCorrection;
 			sourceTree = "<group>";
@@ -140,7 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0662914A261A355A001C4C40 /* MyProfileViewController.swift in Sources */,
 				0687A1472615CF7F007EBB3C /* LoginViewController.swift in Sources */,
+				06629158261A3EDF001C4C40 /* Person.swift in Sources */,
+				06629153261A3A40001C4C40 /* User.swift in Sources */,
 				0687A1592615CFC7007EBB3C /* WelcomeViewController.swift in Sources */,
 				0687A1432615CF7F007EBB3C /* AppDelegate.swift in Sources */,
 				0687A1452615CF7F007EBB3C /* SceneDelegate.swift in Sources */,
@@ -290,9 +342,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7W36S89AXJ;
-				INFOPLIST_FILE = LessonThreeCorrection/Info.plist;
+				INFOPLIST_FILE = LessonThreeCorrection/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,6 +353,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = philipnoskov.LessonThreeCorrection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -310,9 +364,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7W36S89AXJ;
-				INFOPLIST_FILE = LessonThreeCorrection/Info.plist;
+				INFOPLIST_FILE = LessonThreeCorrection/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +375,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = philipnoskov.LessonThreeCorrection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

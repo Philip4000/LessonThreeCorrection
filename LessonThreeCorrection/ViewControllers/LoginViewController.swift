@@ -9,11 +9,17 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
+    // MARK: - Private Properties
+    
     private var userName = "User"
     private var userPassword = "12345678"
+    
+    // MARK: - Override Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +38,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         welcomeVC.userName = nameTF.text
     }
+    
+    // MARK: - IBActions
     
     @IBAction func logginButtonPressed() {
         if  nameTF.text != userName || passwordTF.text != userPassword {
@@ -56,6 +64,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordTF.text = nil
     }
     
+    // MARK: - Public Methods
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == nameTF {
             passwordTF.becomeFirstResponder()
@@ -65,6 +75,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         return true
     }
+    
+    // MARK: - Private Methods
     
     private func showAlert(whith title: String, and message: String) {
         let alertMessage = UIAlertController(title: title,
