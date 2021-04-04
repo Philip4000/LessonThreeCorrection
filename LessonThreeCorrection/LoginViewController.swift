@@ -27,23 +27,28 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else {return}
+        guard let welcomeVC = segue.destination as? WelcomeViewController else {
+            return
+        }
         welcomeVC.userName = nameTF.text
     }
     
     @IBAction func logginButtonPressed() {
-        if let name = nameTF.text, let password = passwordTF.text, name != userName || password != userPassword {
-            showAlert(whith: "User Name or Password incorrect", and: "Please input correct User Name or Password")
+        if  nameTF.text != userName || passwordTF.text != userPassword {
+            showAlert(whith: "User Name or Password incorrect",
+                      and: "Please input correct User Name or Password")
             passwordTF.text = nil
         }
     }
     
     @IBAction func forgotNameButtonPressed() {
-        showAlert(whith: "Forgot User Name?", and: "You user name is \"\(userName)\"!")
+        showAlert(whith: "Forgot User Name?",
+                  and: "You user name is \"\(userName)\"!")
     }
     
     @IBAction func forgotPasswordButtonPressed() {
-        showAlert(whith: "Forgot Password?", and: "You password is \"\(userPassword)\"!")
+        showAlert(whith: "Forgot Password?",
+                  and: "You password is \"\(userPassword)\"!")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
