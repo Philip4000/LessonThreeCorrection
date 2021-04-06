@@ -326,6 +326,13 @@ Login please ☺️ </string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Profile info" leftItemsSupplementBackButton="YES" id="WBq-PM-zJA"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="eGx-N7-1O8" id="JI0-Cb-7z8"/>
+                        <outlet property="cityLabel" destination="BlJ-vp-AL6" id="NjC-ma-lxa"/>
+                        <outlet property="fullName" destination="KFt-Hd-NgR" id="5Hs-Iy-tuP"/>
+                        <outlet property="phoneLabel" destination="Xd2-r0-T2E" id="sXj-fc-Eyc"/>
+                        <outlet property="regionLabel" destination="hxO-yH-zOL" id="GMn-h9-te2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="583-Py-zHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

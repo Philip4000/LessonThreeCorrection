@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0662914A261A355A001C4C40 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06629149261A355A001C4C40 /* MyProfileViewController.swift */; };
 		06629153261A3A40001C4C40 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06629152261A3A40001C4C40 /* User.swift */; };
-		06629158261A3EDF001C4C40 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06629157261A3EDF001C4C40 /* Person.swift */; };
 		0687A1432615CF7F007EBB3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687A1422615CF7F007EBB3C /* AppDelegate.swift */; };
 		0687A1452615CF7F007EBB3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687A1442615CF7F007EBB3C /* SceneDelegate.swift */; };
 		0687A1472615CF7F007EBB3C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687A1462615CF7F007EBB3C /* LoginViewController.swift */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		06629149261A355A001C4C40 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		06629152261A3A40001C4C40 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		06629157261A3EDF001C4C40 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0687A13F2615CF7F007EBB3C /* LessonThreeCorrection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessonThreeCorrection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0687A1422615CF7F007EBB3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0687A1442615CF7F007EBB3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				06629152261A3A40001C4C40 /* User.swift */,
-				06629157261A3EDF001C4C40 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,7 +188,6 @@
 			files = (
 				0662914A261A355A001C4C40 /* MyProfileViewController.swift in Sources */,
 				0687A1472615CF7F007EBB3C /* LoginViewController.swift in Sources */,
-				06629158261A3EDF001C4C40 /* Person.swift in Sources */,
 				06629153261A3A40001C4C40 /* User.swift in Sources */,
 				0687A1592615CFC7007EBB3C /* WelcomeViewController.swift in Sources */,
 				0687A1432615CF7F007EBB3C /* AppDelegate.swift in Sources */,
